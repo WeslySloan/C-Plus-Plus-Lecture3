@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program", "Program\Program.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class1th (Brute Force)", "Class1th (Brute Force)\Class1th (Brute Force).vcxproj", "{BADB8A9B-F167-4179-AFED-A66F965E8106}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class2th (Sieve of Eratosthenes)", "Class2th (Sieve of Eratosthenes)\Class2th (Sieve of Eratosthenes).vcxproj", "{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{BADB8A9B-F167-4179-AFED-A66F965E8106}.Release|x64.Build.0 = Release|x64
 		{BADB8A9B-F167-4179-AFED-A66F965E8106}.Release|x86.ActiveCfg = Release|Win32
 		{BADB8A9B-F167-4179-AFED-A66F965E8106}.Release|x86.Build.0 = Release|Win32
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Debug|x64.ActiveCfg = Debug|x64
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Debug|x64.Build.0 = Debug|x64
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Debug|x86.Build.0 = Debug|Win32
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Release|x64.ActiveCfg = Release|x64
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Release|x64.Build.0 = Release|x64
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Release|x86.ActiveCfg = Release|Win32
+		{A6B36450-573E-4A1D-99C6-DF7079F0E2AD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
