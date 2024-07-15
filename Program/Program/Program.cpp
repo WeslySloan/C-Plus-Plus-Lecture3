@@ -4,79 +4,58 @@ using namespace std;
 
 #define SIZE 5
 
-void bubbleSort(int arr[], int size)
-{
-    for (int i = 0; i < size - 1; i++)
-    {
-        for (int j = 0; j < size - 1 - i; j++)
-        {
-            if (arr[j] > arr[j + 1])
-            {
-                int A = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = A;
-            }
-        }
-    }
-}
-
-void show(int arr[], int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
-
 int main()
 {
-#pragma region 거품 정렬
-	// 서로 인접한 두 원소를 검사하여 정렬하는 알고리즘입니다.
+#pragma region 삽입 정렬
+	// 데이터를 하나씩 확인하면서 이미 정렬된 부분과 비교하여
+	// 자신의 위치를 찾아 삽입하는 방식으로 정렬되는 알고리즘입니다.
+
+    // 시작점은 n+1 [key] = n+1 
+    // sort 되기 위해 default key 랑 next key 를 비교삽입 
+    // && 
+    // list[len + 1] > key 만큼 비교
 
     int list[SIZE] = { 13,8,97,1,36 };
+    
+    int key = 0;
+    int j = 0;
 
-    for (int i = 0; i < SIZE - 1; i++)
+    for (int i = 1; i < SIZE; i++)
     {
-        for (int j = 0; j < (SIZE - i) - 1; j++)
+        key = list[i];
+
+        for (j = i - 1; j >= 0 && list[j] > key; j--)
         {
-            if (list[j] > list[j + 1])
-            {
-                std::swap(list[j], list[j + 1]);
-            }
+            list[j + 1] = list[j];
         }
+
+        list[j + 1] = key;
     }
 
-    for (const int& element : list)
+    for (const int & element : list)
     {
         cout << element << " ";
     }
 
-
-    // int arr[] = { 3, 2, 7, 5, 11 };
-    // int size = sizeof(arr) / sizeof(arr[0]);
+    // for (int i = 1; i < SIZE; i++)
+    // {
+    //     int key = list[i]; // default
+    //     int j = i - 1;
     // 
-    // cout << "arr[] 배열: ";
-    // show(arr, size);
+    //     while (j >= 0 && list[j] > key)
+    //     {
+    //         list[j + 1] = list[j];
+    //         j = j - 1;
+    //     }
+    //     list[j + 1] = key;
+    // }
     // 
-    // bubbleSort(arr, size);
-    // 
-    // cout << "거품 정렬 된 arr[] 배열 : ";
-    // show(arr, size);
-    // 
-    // int arr2[] = { 31 ,10, 15 , 7, 5 , 21, 29 };
-    // int size2 = sizeof(arr2) / sizeof(arr2[0]);
-    // 
-    // cout << "arr2[] 배열: ";
-    // show(arr2, size2);
-    // 
-    // bubbleSort(arr2, size2);
-    // 
-    // cout << "거품 정렬 된 arr2[] 배열 : ";
-    // show(arr2, size2);
-
+    // for (const int& element : list)
+    // {
+    //     cout << element << " ";
+    // }
+	
 #pragma endregion
-
 
 
 	return 0;
