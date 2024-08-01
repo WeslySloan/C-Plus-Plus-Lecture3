@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class19th (Union Find)", "C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class20th (Minimum Spanning Tree)", "Class20th (Minimum Spanning Tree)\Class20th (Minimum Spanning Tree).vcxproj", "{A268F878-CE66-4705-8B64-0A7A6A633A4D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class21th (Prefix Sum)", "Class21th (Prefix Sum)\Class21th (Prefix Sum).vcxproj", "{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{A268F878-CE66-4705-8B64-0A7A6A633A4D}.Release|x64.Build.0 = Release|x64
 		{A268F878-CE66-4705-8B64-0A7A6A633A4D}.Release|x86.ActiveCfg = Release|Win32
 		{A268F878-CE66-4705-8B64-0A7A6A633A4D}.Release|x86.Build.0 = Release|Win32
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Debug|x64.ActiveCfg = Debug|x64
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Debug|x64.Build.0 = Debug|x64
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Debug|x86.ActiveCfg = Debug|Win32
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Debug|x86.Build.0 = Debug|Win32
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Release|x64.ActiveCfg = Release|x64
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Release|x64.Build.0 = Release|x64
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Release|x86.ActiveCfg = Release|Win32
+		{D31ADE89-D6A9-4F42-AD32-EBB675750DEA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
